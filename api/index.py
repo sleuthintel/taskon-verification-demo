@@ -1,3 +1,8 @@
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+
 from fastapi import FastAPI, Header
 from fastapi.middleware.cors import CORSMiddleware
 from typing import Optional
